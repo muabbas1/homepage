@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustafa's Website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <h1>Hi Mustafa!</h1>
+    <section class="bookmarks">
+        <a href="https://mail.google.com" target="_blank">
+        <i class="fas fa-envelope"></i>
+        </a>
+               <i class="fas fa-sticky-note" onclick="showNote()"></i>
+               <i class="fas fa-calculator" onclick="showCalculator()"></i>
+               <i class="fab fa-google-drive"></i>
+               <i class="fab fa-twitter"></i>
+        </section>
+        <!-- MORE ICONS: https://fontawesome.com/v5/search?o=r&m=free  -->
+</body>
+   
     <main>
         <section id="search-section">
-            <h2>Search</h2>
+            <h2></h2>
             <form id="search-form" onsubmit="return performSearch()">
-                <input type="text" id="search-input" placeholder="Enter your search query">
+                <input type="text" id="search-input" placeholder="Enter your search query" style="width: 100%; max-width: 1000px;">
                 <button type="submit">Search</button>
             </form>
             <div id="search-results"></div>
         </section>
         <!-- Other sections of your homepage -->
     </main>
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
     <script src="myScripts.js"></script>
+
+    <a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" >NEW YORK WEATHER</a>
+    <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+    </script>
 </body>
 </html>
-
